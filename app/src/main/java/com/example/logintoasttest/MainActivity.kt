@@ -11,10 +11,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         
         clickBtn.setOnClickListener { 
-            val email = inputEmail.text.toString()
-            val pwd = inputPwd.text.toString()
+            val inputEmail = inputEmail.text.toString()
+            val inputPassword = inputPwd.text.toString()
             
-            if(email == "admin@test.com" && pwd == "qwer"){
+            if(inputEmail == "admin@test.com" && inputPassword == "qwer"){
                 // 관리자 이름을 변수에 임시 저장
                 val name = "강진우"
 
