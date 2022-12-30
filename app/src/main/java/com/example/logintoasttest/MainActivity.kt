@@ -15,7 +15,11 @@ class MainActivity : AppCompatActivity() {
             val pwd = inputPwd.text.toString()
             
             if(email == "admin@test.com" && pwd == "qwer"){
-                Toast.makeText(this, "관리자 입니다.", Toast.LENGTH_SHORT).show()
+                // 관리자 이름을 변수에 임시 저장
+                val name = "강진우"
+
+
+                Toast.makeText(this, "${name} 관리자 입니다.", Toast.LENGTH_SHORT).show()
             }else{
                 Toast.makeText(this, "로그인 실패", Toast.LENGTH_SHORT).show()
             }
